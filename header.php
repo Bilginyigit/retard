@@ -1,6 +1,6 @@
 <?php
 
-$DBserveur = new PDO('mysql:host=localhost;dbname=retard', 'yigit', 'Be197881', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+$DBserveur = new PDO('mysql:host=localhost;dbname=retard', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 session_start();
 
 $session_id = isset($_SESSION['id']) ? (int) $_SESSION['id'] : 0;
